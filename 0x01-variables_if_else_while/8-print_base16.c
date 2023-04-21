@@ -11,14 +11,13 @@
 int main(void)
 {
 	int n = 48;
+	int o = 97;
 
 	while (n < 58)
 	{
 		putchar(n);
 		n++;
 	}
-	int o = 97;
-	
 	while (o < 103)
 	{
 		putchar(o);
