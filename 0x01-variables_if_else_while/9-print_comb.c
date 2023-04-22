@@ -10,13 +10,12 @@
 
 int main(void)
 {
-	char num[10] = "0123456789";
-	int n = 0;
+	int n = 48;
 
-	while (n < 10)
+	while (n < 58)
 	{
-		putchar(num[n]);
-		if (n != 9)
+		putchar(n);
+		if (n != 57)
 		{
 			putchar(',');
 			putchar(' ');
