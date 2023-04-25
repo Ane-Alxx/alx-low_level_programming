@@ -1,15 +1,14 @@
+#include <stdio.h>
 #include "main.h"
 
+
 /**
- * print to 98
- * Author: Ane-Alx
- * 
- */
- 
+* print to 98
+* @n: start point
+*/
 void print_to_98(int n)
 {
-	int i; 
-	int j;
+	int i, j;
 
 	if (n <= 98)
 	{
