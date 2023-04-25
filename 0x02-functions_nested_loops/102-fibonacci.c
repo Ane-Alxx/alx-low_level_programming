@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * 
+ * 
+ * 
+ * Return: always 0 (success)
+ */
+
+
+int main(void)
+{
+	int c = 0;
+	int fibbo1 = 0;
+	int fibbo2 = 1;
+	int sum;
+
+	while (c < 50)
+	{
+		sum = fibbo1 + fibbo2;
+		printf("%d", sum);
+		fibbo1 = fibbo2;
+		fibbo2 = sum;
+		if (c == 49)
+		{
+			printf("\n");
+		}
+		else
+		{
+				printf(", ");
+		}
+		c++;
+	}
+
+	return (0);
+}
