@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * alphabet
  * Author: Ane-Alx
  * Return: Always 0 (Success)
  */

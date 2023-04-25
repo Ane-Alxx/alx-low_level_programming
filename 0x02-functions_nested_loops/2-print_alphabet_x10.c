@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - code to print_alphabet_x10
  * Author: Ane-Alx
- * Return: Always 0 (Success)
+ * Return: (Success)
  */
 void print_alphabet_x10(void)
 {
