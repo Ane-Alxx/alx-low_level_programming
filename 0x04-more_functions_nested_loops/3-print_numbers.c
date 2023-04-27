@@ -8,12 +8,12 @@
 
 void print_numbers(void)
 {
-	int i = 48;
+	char c;
 
-	while (i  <  58)
+	for (c = '0'; c <= '9'; c++)
 	{
-		_putchar(i);
-		i++;
+		_putchar(c);
 	}
 	_putchar('\n');
 }
+
