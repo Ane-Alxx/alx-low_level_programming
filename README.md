@@ -1,14 +1,12 @@
-0x05-pointers_arrays_strings Readme
----------------------------------------------
-- 0-reset_to_98.c
-- 1-swap.c
-- 2-strlen.c
-- 3-puts.c
-- 4-print_rev.c
-- 5-rev_string.c
-- 6-puts2.c
-- 7-puts_half.c
-- 8-print_array.c
-- 9-strcpy.c
-- ... and the advanced
+ alx-low_level_programming
+--------------------------
+this directory containd all the project subdirectories for the ALX low level programming task.
+such as:
+- 0x00-hello_world 
+- 0x02-functions_nested_loops
+- 0x04-more_functions_nested_loops
+- 0x03-debugging
+- 0x01-variables_if_else_while 
+- 0x05-pointers_arrays_strings
+- ...etc
 
