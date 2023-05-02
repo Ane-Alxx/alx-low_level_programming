@@ -1,8 +1,14 @@
-This is a repository to hold C programs, written in betty style thingy
-OBJECTIVES
---------------------------
- - Understand how ALX wants us to style our code so the checker will mark us correct 
- - Configure Emacs and Vi to work with tab spaces so the checker can mark us correct
- - Link betty and hope it works successfuly so she can help
- - Finally, write code in C
+0x05-pointers_arrays_strings Readme
+---------------------------------------------
+- 0-reset_to_98.c
+- 1-swap.c
+- 2-strlen.c
+- 3-puts.c
+- 4-print_rev.c
+- 5-rev_string.c
+- 6-puts2.c
+- 7-puts_half.c
+- 8-print_array.c
+- 9-strcpy.c
+- ... and the advanced
 
