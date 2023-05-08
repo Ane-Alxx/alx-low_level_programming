@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _memset
+* _memset - set intial memory slot
 * @s: starting address of memory to be filled
 * @b: the desired value
 * @n: number of bytes to be changed
