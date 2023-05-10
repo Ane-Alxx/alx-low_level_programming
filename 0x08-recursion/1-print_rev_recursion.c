@@ -1,12 +1,12 @@
 #include "main.h"
-#include <stddef.h>
 /**
 * _print_rev_recursion - function for _print_rev_recursion
 * @s: The string to be printed.
 */
+
 void _print_rev_recursion(char *s)
 {
-	if (*s != NULL)
+	if (*s)
 	{
 		_print_rev_recursion(s + 1);
 		_putchar(*s);
