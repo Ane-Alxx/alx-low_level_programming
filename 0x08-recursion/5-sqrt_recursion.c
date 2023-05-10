@@ -29,11 +29,11 @@ int _sqrt_recursion(int n)
 			}
 			else if (l * l == n)
 			{
-				return(l);
+				return (l);
 			}
 			else
 			{
-				return(-1);
+				return (-1);
 			}
 	}
 }
