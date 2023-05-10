@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
 * _strlen_recursion - Function for _strlen_recursion
 * @s: The string to be measured.

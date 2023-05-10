@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
 * _puts_recursion - function for _puts_recursion
 * @s: input
