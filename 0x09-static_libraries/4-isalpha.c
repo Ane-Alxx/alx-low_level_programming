@@ -1,13 +1,12 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check alphabets
- * Author: Ane-Alx
- * Return: 1 if c is a letter, 0 otherwise
- */
- 
-int _isalpha(int letter)
+* _isalpha - checks alphabet
+* @c: check this character
+* Return: 1 if c is a letter, 0 otherwise
+*/
+
+int _isalpha(int c)
 {
-	return ((letter >= 'a' && letter <= 'z') || (letter >= 'A' && letter <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }

@@ -1,20 +1,16 @@
 #include "main.h"
 
 /**
- * calculate integer absolute value
- * Author: Ane-Alx
- * Return: integer abs 
- */
- 
+* _abs - returns the absolute value
+* @n: check this number oo
+* Return: the absolute value of int
+*/
+
 int _abs(int n)
 {
 	if (n >= 0)
 	{
 		return (n);
 	}
-	else
-	{
-	    return (-n);
-	}
-	
+	return (-n);
 }
