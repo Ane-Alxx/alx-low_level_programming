@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
-* check_num: checks the number
+* check_num - checks the number
 * @str: string array
 *
 * Return: 1 (Success)

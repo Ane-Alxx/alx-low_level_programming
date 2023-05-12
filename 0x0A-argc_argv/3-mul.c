@@ -2,70 +2,58 @@
 #include "main.h"
 
 /**
-* _atoi - function for _atoi
-* @s: string at pointer s
+* _atoi - function _atoi
+* @s: string
 *
-* Return: integer from string
+* Return: int
 */
 int _atoi(char *s)
 {
-	int l = 0;
+	int i = 0;
 	int m = 0;
 	int n = 0;
-	int length = 0;
+	int l = 0;
 	int p = 0;
 	int num = 0;
 
-	while (s[length] != '\0')
+	while (s[l] != '\0')
+		l++;
+
+	while (i < l && p == 0)
 	{
-		length++;
-	}
-	while ((l < length) && (p == 0))
-	{
-		if (s[l] == '-')
-		{
+		if (s[i] == '-')
 			++m;
+
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-		if ((s[l] >= ‘0’) && (s[l] <= ‘9’))
-		{
-			num = s[l] - '0';
+			num = s[i] - '0';
 			if (m % 2)
-			{
 				num = -num;
-			}
 			n = n * 10 + num;
 			p = 1;
-			if (s[l + 1] < '0' || s[l + 1] > '9')
-			{
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-			}
 			p = 0;
 		}
-		l++;
+		i++;
 	}
+
 	if (p == 0)
-	{
 		return (0);
-	}
 
 	return (n);
 }
 
 /**
-* main - multiplier
-*
+* main - multiplies two numbers
 * @argc: size of array
-*
 * @argv: array
 *
-* Return: 0 (Success), 1 (Fail)
+* Return: 0 (Success), 1 (fail)
 */
-
 int main(int argc, char *argv[])
 {
-	int mul;
-	int n1;
-	int n2;
+	int mul, n1, n2;
 
 	if (argc < 3 || argc > 3)
 	{
@@ -81,3 +69,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
