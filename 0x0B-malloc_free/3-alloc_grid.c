@@ -34,7 +34,7 @@ int **alloc_grid(int width, int height)
 		{
 			while (ax >= 0)
 			{
-				free(mee[x]);
+				free(pt[ax]);
 				ax--;
 			}
 			free(pt);
@@ -47,7 +47,7 @@ int **alloc_grid(int width, int height)
 	{
 		while (by < width)
 		{
-			mee[ax][by] = 0;
+			pt[ax][by] = 0;
 			by++;
 		}
 		ax++;

@@ -46,7 +46,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (s2[n] != '\0')
 	{
-		conct[m] = s2[n];
+		join[m] = s2[n];
 		m++;
 		n++;
 	}
