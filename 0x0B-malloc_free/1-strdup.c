@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
 /**
 * _strdup - function for _strdup
 *
@@ -27,10 +28,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (str[o])
+	for (o = 0; str[o]; o++)
 	{
 		word[o] = str[0];
-		o++;
 	}
 
 	return (word);
