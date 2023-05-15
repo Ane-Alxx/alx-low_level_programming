@@ -28,7 +28,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (o < sizeof(word))
+	while (str[o])
 	{
 		word[o] = str[o];
 		o++;
