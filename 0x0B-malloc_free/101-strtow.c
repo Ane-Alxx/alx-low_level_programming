@@ -12,7 +12,6 @@
 char **strtow(char *str)
 {
 	char **mesh;
-	char *temp;
 	int l = 0;
 	int w;
 
