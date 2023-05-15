@@ -28,9 +28,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (o = 0; str[o]; o++)
+	while (o < sizeof(word))
 	{
-		word[o] = str[0];
+		word[o] = str[o];
+		o++;
 	}
 
 	return (word);
