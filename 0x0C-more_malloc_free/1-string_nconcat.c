@@ -44,7 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s[ink++] = s2[jug++];
 	}
-	while ((n >= l2) && (I < (l1 + l2)))
+	while ((n >= l2) && (ink < (l1 + l2)))
 	{
 		s[ink++] = s2[jug++];
 	}
