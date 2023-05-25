@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					stringptr = va_arg(vals, char *);
-					if (!str)
+					if (!stringptr)
 						stringptr = "(nil)";
 					printf("%s%s", seperatorptr, stringptr);
 					break;

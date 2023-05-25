@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	while (m < n)
 	{
-		stringPtr = va_arg(strings, char *);
+		stringPtr = va_arg(values, char *);
 
 		if (strinPtr == NULL)
 		{
