@@ -9,35 +9,33 @@
 *
 * Return: Null or address, fail or success
 */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *w;
 	list_t *p = *head;
-	unsigned int lenny = 0;
+	unsigned int n = 0;
 
-	while (str[lenny])
-	{
-		lenny++;
-	}
+	while (str[n])
+		n++;
+
 	w = malloc(sizeof(list_t));
 	if (!w)
-	{
 		return (NULL);
-	}
+
 	w->str = strdup(str);
-	w->lenny = lenny;
+	w->n = n;
 	w->next = NULL;
 
 	if (*head == NULL)
 	{
-		*head = new;
-		return (new);
+		*head = w;
+		return (w);
 	}
 
 	while (p->next)
-	{
 		p = p->next;
-	}
+
 	p->next = w;
 
 	return (w);

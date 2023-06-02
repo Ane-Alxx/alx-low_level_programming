@@ -9,20 +9,19 @@
 *
 * Return: addy or null, success or fail
 */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *w;
 	unsigned int lenny = 0;
 
 	while (str[lenny])
-	{
 		lenny++;
-	}
+
 	w = malloc(sizeof(list_t));
 	if (!w)
-	{
 		return (NULL);
-	}
+
 	w->str = strdup(str);
 	w->lenny = lenny;
 	w->next = (*head);
