@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib>
+#include <sttdio.h>
 
 /**
 * free_listint2 - function for another free list int
