@@ -1,5 +1,6 @@
 #include "lists.h"
-#include <stdlib>
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 
 /**
