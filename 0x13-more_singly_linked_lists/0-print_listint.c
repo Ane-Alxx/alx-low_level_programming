@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
-* print_listint - function for print listing
-* @h: list connected to print
+*print_listint - function for print listing
+*@h: list connected to print
 *
-* Return: node count
+*Return: node count
 */
 size_t print_listint(const listint_t *h)
 {
