@@ -69,7 +69,7 @@ int main(int ac, char *av[])
 	t = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (f == -1 || r == -1)
+		if (f == -1 || rd == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", av[1]);
