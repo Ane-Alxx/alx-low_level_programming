@@ -1,0 +1,206 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+
+
+/**
+* _putchar - function for
+* @c: a value
+* Return: a value
+*/
+
+int _putchar(char c){
+
+};
+
+
+/**
+* _islower - function for
+* @c: a value
+* Return: a value
+*/
+int _islower(int c){
+
+};
+
+
+/**
+* _isalpha - function for
+* @c: a value
+* Return: a value
+*/
+int _isalpha(int c){
+
+};
+
+
+/**
+* _abs - function for
+* @n: a value
+* Return: a value
+*/
+int _abs(int n){
+
+};
+
+/**
+* _isupper - function for
+* @c: a value
+* Return: a value
+*/
+int _isupper(int c){
+
+};
+
+/**
+* _isdigit - function for
+* @c: a value
+* Return: a value
+*/
+int _isdigit(int c){
+
+};
+
+
+/**
+* _strlen - function for
+* @s: a value
+* Return: a value
+*/
+int _strlen(char *s){
+
+};
+
+/**
+* _puts - function for
+* @s: a value
+* Return: a value
+*/
+void _puts(char *s){
+
+};
+
+/**
+* _strcpy - function for
+* @dest: a value
+* @src: a value
+* Return: a value
+*/
+char *_strcpy(char *dest, char *src){
+
+};
+
+/**
+* _atoi - function for
+* @s: a value
+* Return: a value
+*/
+int _atoi(char *s){
+
+};
+
+
+/**
+* _strcat - function for
+* @dest: a value
+* @src: a value
+* Return: a value
+*/
+char *_strcat(char *dest, char *src){
+
+};
+
+
+/**
+* _strncat - function for
+* @dest: a value
+* @src: a value
+* @n: a value
+* Return: a value
+*/
+char *_strncat(char *dest, char *src, int n){
+
+};
+
+/**
+* _strncpy - function for
+* @dest: a value
+* @src: a value
+* @n: a value
+* Return: a value
+*/
+char *_strncpy(char *dest, char *src, int n){
+
+};
+
+/**
+* _strcmp - function for
+* @s1: a value
+* @s2: a value
+* Return: a value
+*/
+int _strcmp(char *s1, char *s2){
+
+};
+
+/**
+* _memset - function for
+* @s: a value
+* @b: a value
+* @n: a value
+* Return: a value
+*/
+char *_memset(char *s, char b, unsigned int n){
+
+};
+
+/**
+* _memcpy - function for
+* @dest: a value
+* @src: a value
+* @n: a value
+* Return: a value
+*/
+char *_memcpy(char *dest, char *src, unsigned int n){
+
+};
+
+/**
+* _strchr - function for
+* @s: a value
+* @c: a value
+* Return: a value
+*/
+char *_strchr(char *s, char c){
+
+};
+
+/**
+* _strspn - function for
+* @s: a value
+* @accept: a value
+* Return: a value
+*/
+unsigned int _strspn(char *s, char *accept){
+
+};
+
+/**
+* _strpbrk - function for
+* @s: a value
+* @accept: a value
+* Return: a value
+*/
+char *_strpbrk(char *s, char *accept){
+
+};
+
+/**
+* _strstr - function for
+* @haystack: a value
+* @needle: a value
+* Return: a value
+*/
+char *_strstr(char *haystack, char *needle){
+
+};
