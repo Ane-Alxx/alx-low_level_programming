@@ -1,4 +1,7 @@
 #include "hash_tables.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
 * hash_table_get - functions for hashtable
