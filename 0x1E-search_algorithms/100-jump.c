@@ -1,40 +1,53 @@
 #include "search_algos.h"
+
 /**
- * jump_search - Searches for a value in a sorted array of integers using the Jump search algorithm.
- * @array: A pointer to the first element of the array to search in.
- * @size: The number of elements in `array`.
- * @value: The value to search for.
- * Returns: The index of the value if it is found in the array, or -1 if it is not found.
+ * jump_search - solution for the advanced jump search
+ * @array: way to the array
+ * @size: length of array
+ * @value: key value
+ * Return: index on success, -1 or NULL on fail
  */
 int jump_search(int *array, size_t size, int value)
 {
-   
-	size_t jump_step = sqrt(size);
-	size_t current_index = 0;
+	size_t nm, jump = 0, step = sqrt(size);
 
-   
-	while (current_index < size)
+	if (array == NULL)
+		return (-1);
+	while (array[min_min(step, size) - 1] < value)
 	{
-		
-		printf("Value checked array[%zu] = [%d]\n", current_index, array[current_index]);
-
-	   
-		if (array[current_index] == value)
-		{
-			return current_index;
-		}
-		else if (array[current_index] > value)
-		{
-			return -1;
-		}
-		else
-		{
-			current_index += jump_step;
-		}
+		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
+		nm = jump;
+		jump = step;
+		step += sqrt(size);
+		if (jump >= size)
+			return (-1);
 	}
+	printf("Value found between indexes [%ld] and [%ld]\n", nm, jump);
+	while (array[jump] < value)
+	{
+		jump += 1;
+		if (jump == min_min(step, size))
+			return (-1);
+		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
+	}
+	printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
 
-	
-	//If the value is not found in the array, return -1.
-	 
-	return -1;
+	if (array[jump] == value)
+		return (jump);
+	else
+		return (-1);
+}
+
+
+/**
+ * min_min - just a simple function to find the min
+ * @num1: first value
+ * @num2: second value
+ * Return: num1 or num2 on success
+ */
+size_t min_min(size_t num1, size_t num2)
+{
+	if (num1 < num2)
+		return (num1);
+	return (num2);
 }

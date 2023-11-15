@@ -1,59 +1,35 @@
 #include "search_algos.h"
-
 /**
- * binary_search - Searches for a value in a sorted array of integers using the binary search algorithm.
- *
- * @array: A pointer to the first element of the array to search in.
- * @size: The number of elements in the array.
- * @value: The value to search for.
- *
- * Returns:The index of the value if it is found in the array, or -1 if it is not found.
+ * binary_search - solution for task 1 binary search
+ * @array: the array to split and search
+ * @size: length of array
+ * @value: key value
+ * Return: index on success, -1 or NULL on fail
  */
 int binary_search(int *array, size_t size, int value)
 {
-	// Check if the array is NULL or empty.
-	if (array == NULL || size == 0)
-	{
-		return -1;
-	}
-
-	// Print the array being searched.
-	printf("Searching in array: ");
-	for (size_t i = 0; i < size; i++)
-	{
-		printf("%d, ", array[i]);
-	}
-	printf("\n");
-
-	// Set the low and shang indices of the subarray to search.
-	size_t xia = 0;
+	size_t zhong, nm, xia = 0;
 	size_t shang = size - 1;
 
-	// While the low index is less than or equal to the high index, continue searching.
+	if (array == NULL)
+		return (-1);
 	while (xia <= shang)
 	{
-		// Calculate the middle index of the subarray.
-		size_t zhong = (xia + shang) / 2;
-
-		// If the value is equal to the element at the middle index, return the middle index.
-		if (array[zhong] == value)
+		zhong = (xia + shang) / 2;
+		printf("Searching in array: ");
+		for (nm = xia; nm < shang + 1; nm++)
 		{
-			return zhong;
+			printf("%d", array[nm]);
+			if (nm != shang)
+				printf(", ");
 		}
-
-		// If the value is less than the element at the middle index, search the left half of the subarray.
-		else if (value < array[zhong])
-		{
-			shang = zhong - 1;
-		}
-
-		// Otherwise, search the right half of the subarray.
-		else
-		{
+		printf("\n");
+		if (value == array[zhong])
+			return (zhong);
+		if (value > array[zhong])
 			xia = zhong + 1;
-		}
+		else
+			shang = zhong - 1;
 	}
-
-	// If the value is not found, return -1.
-	return -1;
+	return (-1);
 }
