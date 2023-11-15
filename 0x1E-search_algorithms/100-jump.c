@@ -1,53 +1,43 @@
 #include "search_algos.h"
 
 /**
- * jump_search - solution for the advanced jump search
- * @array: way to the array
- * @size: length of array
- * @value: key value
- * Return: index on success, -1 or NULL on fail
+ * jump_search - Searches for a value in a sorted array of integers
+ * using the Jump search algorithm.
+ * @array: A pointer to the first element of the array to search in.
+ * @size: The number of elements in `array`.
+ * @value: The value to search for.
+ * Returns:The first index where `value` is located, or -1 if it is not found.
  */
 int jump_search(int *array, size_t size, int value)
 {
-	size_t nm, jump = 0, step = sqrt(size);
-
-	if (array == NULL)
-		return (-1);
-	while (array[min_min(step, size) - 1] < value)
+	if (array == NULL || size == 0)
 	{
-		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
-		nm = jump;
-		jump = step;
-		step += sqrt(size);
-		if (jump >= size)
-			return (-1);
+		return -1;
 	}
-	printf("Value found between indexes [%ld] and [%ld]\n", nm, jump);
-	while (array[jump] < value)
+	size_t jumpStep = (size_t)sqrt(size);
+	size_t current = 0;
+	while (current < size && array[current] <= value)
 	{
-		jump += 1;
-		if (jump == min_min(step, size))
-			return (-1);
-		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
+		printf("Value checked array[%zu] = [%d]\n", current, array[current]);
+		if (array[current] == value)
+		{
+			return current;
+		}
+		current += jumpStep;
 	}
-	printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
+	if (current >= size)
+	{
+		current = size - 1;
+	}
+	printf("Value found between indexes [%zu] and [%zu]\n", current - jumpStep, current);
 
-	if (array[jump] == value)
-		return (jump);
-	else
-		return (-1);
-}
-
-
-/**
- * min_min - just a simple function to find the min
- * @num1: first value
- * @num2: second value
- * Return: num1 or num2 on success
- */
-size_t min_min(size_t num1, size_t num2)
-{
-	if (num1 < num2)
-		return (num1);
-	return (num2);
+	for (size_t i = current - jumpStep; i <= current; i++)
+	{
+		printf("Value checked array[%zu] = [%d]\n", i, array[i]);
+		if (array[i] == value)
+		{
+			return i;
+		}
+	}
+	return -1;
 }
