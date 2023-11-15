@@ -10,11 +10,8 @@
 int linear_search(int *array, size_t size, int value)
 {
 	size_t nm;
-	//just in case the array is empty
 	if (array == NULL)
 		return (-1);
-
-	//loop through all values till key value is found
 	for (nm = 0; nm < size; nm++)
 	{
 
@@ -23,6 +20,5 @@ int linear_search(int *array, size_t size, int value)
 			return (nm);
 
 	}
-	//the item was definetly not found
 	return (-1);
 }
